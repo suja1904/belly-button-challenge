@@ -24,7 +24,7 @@ function buildMetadata(sample) {
   });
 
   });
-}
+};
 
 // function to build both charts
 function buildCharts(sample) {
@@ -97,7 +97,7 @@ function buildCharts(sample) {
     // Render the Bar Chart
 
   });
-}
+};
 
 // Function to run on page load
 function init() {
@@ -131,25 +131,25 @@ function init() {
     buildGaugeChart(firstSample); 
 });
 
-
+};
     // Build charts and metadata panel with the first sample
 
 
 
 
 // Function for event listener
-function optionChanged(newSample) {
+
   // Build charts and metadata panel each time a new sample is selected
   function optionChanged(newSample) {
     console.log("New sample selected:", newSample);
     buildCharts(newSample);
     buildMetadata(newSample);
     buildGaugeChart(newSample); 
-}
+};
 
-}
+
 
 // Initialize the dashboard
 init();
 
-}
+
